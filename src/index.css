@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+@font-face {
+  font-family: "gtsuper";
+  src: url("../fonts/GT-Super-Display-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gtsuperMed";
+  src: url("../fonts/GT-Super-Display-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* animations */
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 function Header({ children }) {
-  const headerStyles = "flex flex-col h-[85vh] bg-custom-yellow";
+  const headerStyles = "px-0 flex flex-col h-[85vh] bg-custom-yellow relative ";
   return <div className={headerStyles}>{children}</div>;
 }
 

@@ -1,15 +1,15 @@
 // prettier-ignore
 function Showcase() {
   const parentStyles =
-    " flex-1 px-10 grid grid-cols-2 grid-rows-1 items-center gap-10 py-5";
-  const h1Styles = "font-gtMedium text-8xl  mb-10";
+    "py-2 flex-1 px-10 grid grid-cols-2 grid-rows-1 items-center gap-10 md:py-5   ";
+  const h1Styles = "text-7xl mb-10 font-gtMedium md:text-8xl  md:mb-10";
 
   return (
     <div className={parentStyles}>
-      <div className="pl-10 flex flex-col items-start	">
+      <div className="pl-5 md:pl-10 flex flex-col items-start	">
         <h1 className={h1Styles}>Stay curious</h1>
 
-        <p className="whitespace-pre-line text-2xl mb-10">
+        <p className="text-1xl mb-10 md:text-2xl md:mb-10">
           {"Discover stories, thinking, and expertise from writers on any topic."
             .split("<br/>")
             .join("\n")}
@@ -19,7 +19,7 @@ function Showcase() {
           Start reading
         </button>
       </div>
-      <div className="h-100p grid grid-cols-20 grid-rows-12 grid-flow-col">
+      <div className="hidden lg:h-100p lg:grid lg:grid-cols-20 lg:grid-rows-12 lg:grid-flow-col">
         {Array.from({ length: 240 }, (_, i) => (
           <p
              className={`${ 
@@ -34,7 +34,7 @@ function Showcase() {
             key={i}
             // dynamic animation delay
             style={{
-              animationDelay: `${0.5 + (i/10)}s`
+              animationDelay: `${0.3 + (i/10)}s`
             }}
           >
             B
